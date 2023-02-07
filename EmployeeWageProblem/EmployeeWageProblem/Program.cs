@@ -15,12 +15,15 @@ namespace EmployeeWageProblem
             attandance.Attendance();
 
             Console.WriteLine("Employee is calculate");
-            Calculate calculate= new Calculate();
+            Calculate calculate = new Calculate();
             calculate.EmpCalculate();
 
             Console.WriteLine("Employee checking Part Time");
-            PartTime partTime= new PartTime();
+            PartTime partTime = new PartTime();
             partTime.EmpPartTime();
+
+            Console.WriteLine("Employee switch case");
+            SwitchCase switchCase = new SwitchCase();
             Console.ReadLine();
         }
     }
