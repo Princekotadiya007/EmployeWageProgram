@@ -17,6 +17,10 @@ namespace EmployeeWageProblem
             Console.WriteLine("Employee is calculate");
             Calculate calculate= new Calculate();
             calculate.EmpCalculate();
+
+            Console.WriteLine("Employee checking Part Time");
+            PartTime partTime= new PartTime();
+            partTime.EmpPartTime();
             Console.ReadLine();
         }
     }
