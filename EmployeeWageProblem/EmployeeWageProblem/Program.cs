@@ -10,8 +10,14 @@ namespace EmployeeWageProblem
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Employee is attandance");
             Attandance attandance = new Attandance();
             attandance.Attendance();
+
+            Console.WriteLine("Employee is calculate");
+            Calculate calculate= new Calculate();
+            calculate.EmpCalculate();
+            Console.ReadLine();
         }
     }
 }
