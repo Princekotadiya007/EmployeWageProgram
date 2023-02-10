@@ -6,26 +6,24 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageProblem
 {
-    public class CalculateMonth
+    internal class CalculateTotalHrs
     {
         public const int IS_PARTTIME = 1;
         public const int IS_FULLTIME = 2;
         public const int EMP_RATE_PER_HRS = 20;
         public const int NUM_OF_WORKING_DAYS = 20;
-
-        public void CalculateWage()
+        public const int MAX_RATE_IN_MONTH = 100;
+        public void CalculateMonthHrs()
         {
+            int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;
 
-            int empHrs = 0;
-            int empWages = 0;
-            int totalWages = 0;
-  
             Random random = new Random();
             int empCheck = random.Next(0, 3);
 
 
-            for (int i = 1; i <= NUM_OF_WORKING_DAYS; i++)
+            while (totalEmpHrs < MAX_RATE_IN_MONTH && totalWorkingDays < NUM_OF_WORKING_DAYS)
             {
+                totalWorkingDays++;
                 switch (empCheck)
                 {
                     case IS_PARTTIME:
@@ -39,11 +37,11 @@ namespace EmployeeWageProblem
                         break;
                 }
 
-                empWages = empHrs * EMP_RATE_PER_HRS;
-                Console.WriteLine("Employee wages:" + empWages);
+                totalEmpHrs = totalEmpHrs + empHrs;
+                Console.WriteLine( totalWorkingDays + "Emp Hrs: " + empHrs);
             }
-            totalWages = totalWages + empWages;
-            Console.WriteLine("Total monthly wages of an employee is: " + totalWages);
+            int totalEmpWages = totalEmpHrs * EMP_RATE_PER_HRS;
+            Console.WriteLine("Total Employee wages:" + totalEmpWages);
         }
     }
 }

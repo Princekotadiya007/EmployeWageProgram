@@ -34,6 +34,11 @@ namespace EmployeeWageProblem
             CalculateMonth calculateMonth = new CalculateMonth();
             calculateMonth.CalculateWage();
             Console.WriteLine("\n");
+
+            Console.WriteLine("Employe Calculate total working day and hours");
+            CalculateTotalHrs calculateTotalHrs = new CalculateTotalHrs();
+            calculateTotalHrs.CalculateMonthHrs();
+            Console.WriteLine("\n");
             Console.ReadLine();
         }
     }
