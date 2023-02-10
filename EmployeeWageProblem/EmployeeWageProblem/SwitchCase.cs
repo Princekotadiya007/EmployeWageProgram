@@ -34,7 +34,6 @@ namespace EmployeeWageProblem
 
                 default:
                     Emphours = 0;
-
                     break;
             }
 
