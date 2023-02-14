@@ -39,6 +39,11 @@ namespace EmployeeWageProblem
             CalculateTotalHrs calculateTotalHrs = new CalculateTotalHrs();
             calculateTotalHrs.CalculateMonthHrs();
             Console.WriteLine("\n");
+
+            Console.WriteLine("Compute Employee wage Using Class Methods ");
+            EmployeClassMethods employeClassMethods = new EmployeClassMethods();
+            employeClassMethods.ComputeEmpWage();
+            Console.WriteLine("\n");
             Console.ReadLine();
         }
     }
