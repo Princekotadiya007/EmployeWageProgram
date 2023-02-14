@@ -44,6 +44,11 @@ namespace EmployeeWageProblem
             EmployeClassMethods employeClassMethods = new EmployeClassMethods();
             employeClassMethods.ComputeEmpWage();
             Console.WriteLine("\n");
+
+            Console.WriteLine("Compute Employee wage Parameters instend class method");
+            EmployeParametersInstendClass parameters = new EmployeParametersInstendClass();
+            parameters.ComputeEmpWage("Amazon",20, 5, 20);
+            parameters.ComputeEmpWage("Paytam", 30, 4, 10);
             Console.ReadLine();
         }
     }

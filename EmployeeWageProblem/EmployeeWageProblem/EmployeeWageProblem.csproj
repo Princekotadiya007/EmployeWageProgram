@@ -48,6 +48,7 @@
     <Compile Include="CalculateMonth.cs" />
     <Compile Include="CalculateTotalHrs.cs" />
     <Compile Include="EmployeClassMethods.cs" />
+    <Compile Include="EmployeParametersInstendClass.cs" />
     <Compile Include="PartTime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
