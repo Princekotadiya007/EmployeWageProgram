@@ -49,6 +49,15 @@ namespace EmployeeWageProblem
             EmployeParametersInstendClass parameters = new EmployeParametersInstendClass();
             parameters.ComputeEmpWage("Amazon",20, 5, 20);
             parameters.ComputeEmpWage("Paytam", 30, 4, 10);
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Compute Employee Wage and save Total Wage Intance varible parametre");
+            IntanceVaribleParameter amazon = new IntanceVaribleParameter("Amazon", 20 ,4, 30);
+            amazon.ComputeEmpWage();
+            Console.WriteLine(amazon.ToString());
+            IntanceVaribleParameter google = new IntanceVaribleParameter("google", 25, 8, 20);
+            google.ComputeEmpWage();
+            Console.WriteLine(google.ToString());
             Console.ReadLine();
         }
     }
