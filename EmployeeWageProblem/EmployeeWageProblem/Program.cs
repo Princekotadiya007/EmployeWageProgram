@@ -58,6 +58,13 @@ namespace EmployeeWageProblem
             IntanceVaribleParameter google = new IntanceVaribleParameter("google", 25, 8, 20);
             google.ComputeEmpWage();
             Console.WriteLine(google.ToString());
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Employee Wage of multiple companies");
+            EmpWageBuilder empWageBuilder = new EmpWageBuilder();
+            empWageBuilder.AddCompanyEmpWage("Amazon", 20, 20, 100);
+            empWageBuilder.AddCompanyEmpWage("Google", 25, 25, 120);
+            empWageBuilder.ComputeEmployeeWage();
             Console.ReadLine();
         }
     }

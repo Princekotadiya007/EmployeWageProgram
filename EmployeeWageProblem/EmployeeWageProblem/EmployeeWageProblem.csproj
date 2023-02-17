@@ -47,6 +47,7 @@
     <Compile Include="Calculate.cs" />
     <Compile Include="CalculateMonth.cs" />
     <Compile Include="CalculateTotalHrs.cs" />
+    <Compile Include="CompanyEmpWage.cs" />
     <Compile Include="EmployeClassMethods.cs" />
     <Compile Include="EmployeParametersInstendClass.cs" />
     <Compile Include="IntanceVaribleParameter.cs" />
