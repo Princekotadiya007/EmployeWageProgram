@@ -73,6 +73,13 @@ namespace EmployeeWageProblem
             empWageBuilderUC11.AddCompanys("Microsoft", 28, 15, 90);
             empWageBuilderUC11.ComputeWage();
             Console.WriteLine("\n");
+
+            Console.WriteLine("Employee Wage of Multiple compnies Array list");
+            ArrayListEmpWageUC12 arrayList = new ArrayListEmpWageUC12();
+            arrayList.AddCompanys("Amazon", 20, 20, 70);
+            arrayList.AddCompanys("Google", 25, 10, 80);
+            arrayList.ComputeWage();
+            Console.WriteLine("\n");
             Console.ReadLine();
         }
     }
