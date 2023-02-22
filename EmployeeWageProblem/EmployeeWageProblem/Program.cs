@@ -86,6 +86,17 @@ namespace EmployeeWageProblem
             builders13.AddCompanys("Amazon", 25, 15, 50);
             builders13.AddCompanys("Google", 15, 25, 50);
             builders13.ComputeWage();
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Employee Get the total wage company");
+            GetTotalWageCompany getTotal = new GetTotalWageCompany();
+            getTotal.AddEmployee("prince", "Amazon", 20, 25, 90);
+            getTotal.AddEmployee("pratik", "Google", 15, 20, 80);
+            getTotal.ComputeWage();
+            int totalWage = getTotal.GetTotalWageByCompany("Amazon");
+            Console.WriteLine("Total wage for Amazon Company:" + totalWage);
+            int totalWages = getTotal.GetTotalWageByCompany("Google");
+            Console.WriteLine("Total wage for Google Company:" + totalWages);
             Console.ReadLine();
         }
     }

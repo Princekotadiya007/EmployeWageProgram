@@ -51,6 +51,7 @@
     <Compile Include="CompanyEmpWage10.cs" />
     <Compile Include="EmployeClassMethods.cs" />
     <Compile Include="EmployeParametersInstendClass.cs" />
+    <Compile Include="GetTotalWageCompany.cs" />
     <Compile Include="IEmpWageBuilderUC11.cs" />
     <Compile Include="IntanceVaribleParameter.cs" />
     <Compile Include="PartTime.cs" />
