@@ -65,6 +65,14 @@ namespace EmployeeWageProblem
             empWageBuilder.AddCompanyEmpWage("Amazon", 20, 20, 100);
             empWageBuilder.AddCompanyEmpWage("Google", 25, 25, 120);
             empWageBuilder.ComputeEmployeeWage();
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Employee Wage Of Multiple compnies Interface Methoad");
+            EmpWageBuilders empWageBuilderUC11 = new EmpWageBuilders();
+            empWageBuilderUC11.AddCompanys("Dmart",10,15,80);
+            empWageBuilderUC11.AddCompanys("Microsoft", 28, 15, 90);
+            empWageBuilderUC11.ComputeWage();
+            Console.WriteLine("\n");
             Console.ReadLine();
         }
     }

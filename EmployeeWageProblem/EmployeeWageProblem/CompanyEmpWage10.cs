@@ -72,5 +72,10 @@ namespace EmployeeWageProblem
                 Console.WriteLine($"Total employee wage for company {companyEmpWage.companyName} is {companyEmpWage.totalWage}");
             }
         }
+
+        internal void AddCompanys(string v1, int v2, int v3, int v4)
+        {
+            throw new NotImplementedException();
+        }
     }  
 }
