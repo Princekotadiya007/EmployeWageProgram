@@ -80,6 +80,12 @@ namespace EmployeeWageProblem
             arrayList.AddCompanys("Google", 25, 10, 80);
             arrayList.ComputeWage();
             Console.WriteLine("\n");
+
+            Console.WriteLine("Employee Store The Daily Wage Along With the total wage");
+            EmpWageBuilders13 builders13 = new EmpWageBuilders13();
+            builders13.AddCompanys("Amazon", 25, 15, 50);
+            builders13.AddCompanys("Google", 15, 25, 50);
+            builders13.ComputeWage();
             Console.ReadLine();
         }
     }

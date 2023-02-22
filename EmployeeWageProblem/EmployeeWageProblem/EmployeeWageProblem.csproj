@@ -56,6 +56,7 @@
     <Compile Include="PartTime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoreDailyTotalWage13.cs" />
     <Compile Include="SwitchCase.cs" />
   </ItemGroup>
   <ItemGroup>
